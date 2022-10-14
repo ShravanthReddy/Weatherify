@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_baseline_pause_circle_filled_24.xml" value="0.31145833333333334" />
+        <entry key="app/src/main/res/drawable-v24/ic_baseline_skip_next_24.xml" value="0.31145833333333334" />
+        <entry key="app/src/main/res/drawable/cardbg.xml" value="0.31145833333333334" />
+        <entry key="app/src/main/res/drawable/dailyforecast_card.xml" value="0.31145833333333334" />
+        <entry key="app/src/main/res/drawable/ic_baseline_refresh_24.xml" value="0.31145833333333334" />
+        <entry key="app/src/main/res/drawable/scroll_bar.xml" value="0.17447916666666666" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.4211625779421382" />
+        <entry key="app/src/main/res/layout/activity_spotify_layout.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/cardbackground.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/daily_weather_updates.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/dailyforecast_card.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/scroll_bar_layout.xml" value="0.45" />
+        <entry key="app/src/main/res/layout/swipe_refresh_layout.xml" value="0.15989583333333332" />
+        <entry key="app/src/main/res/layout/tap_to_refresh.xml" value="0.2953125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

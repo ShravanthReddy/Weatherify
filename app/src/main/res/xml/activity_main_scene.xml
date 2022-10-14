@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="100">
+       <KeyFrameSet>
+       </KeyFrameSet>
+        <OnSwipe
+            motion:touchAnchorId="@+id/headerSIV"
+            motion:touchAnchorSide="bottom"
+            motion:dragScale="0.3"/>
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/button"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toTopOf="@+id/includeTapToRefresh" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/headerSIV"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintHorizontal_bias="1.0"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/temperatureTV"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            motion:layout_constraintTop_toTopOf="@+id/headerSIV"
+            motion:layout_constraintHorizontal_bias="0.18"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="92dp" />
+        <Constraint
+            android:id="@+id/dateTimeTV"
+            motion:layout_constraintEnd_toEndOf="@+id/temperatureTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            motion:layout_constraintTop_toTopOf="@+id/temperatureTV"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintStart_toStartOf="@+id/temperatureTV"
+            android:layout_marginTop="195dp" />
+        <Constraint
+            android:id="@+id/include"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="invisible"
+            motion:layout_constraintVertical_bias="0.49"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="150dp" />
+        <Constraint
+            android:id="@+id/textView"
+            motion:layout_constraintStart_toEndOf="@+id/temperatureTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/temperatureTV"
+            android:visibility="invisible"
+            motion:layout_constraintVertical_bias="0.275"
+            motion:layout_constraintTop_toTopOf="@+id/temperatureTV" />
+        <Constraint
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            motion:layout_constraintTop_toBottomOf="@id/headerSIV"
+            android:layout_marginTop="-80dp" />
+        <Constraint
+            android:id="@+id/include2"
+            android:layout_height="800dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="120dp"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/recyclerView"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginTop="40dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/include"
+            android:layout_marginStart="10dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="0dp" />
+        <Constraint
+            android:id="@+id/arrow"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            motion:layout_constraintBottom_toTopOf="@+id/include2"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/arrowDown"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            motion:layout_constraintTop_toTopOf="@+id/include2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="6dp" />
+        <Constraint
+            android:id="@+id/arrowUp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            motion:layout_constraintBottom_toTopOf="@+id/include2"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/updatesTV"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            motion:layout_constraintTop_toTopOf="@+id/include2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp" />
+        <Constraint
+            android:id="@+id/swiperefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/includeTapToRefresh"
+            motion:layout_constraintEnd_toEndOf="@+id/include"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            motion:layout_constraintBottom_toTopOf="@+id/include" />
+
+        <Constraint
+            android:id="@+id/scrollLayout"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="20dp"
+            motion:layout_constraintTop_toTopOf="@+id/include2"
+            android:layout_marginTop="60dp"
+            android:layout_height="0dp" />
+        <Constraint
+            android:id="@+id/spotifyPage"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="46dp"
+            android:layout_height="54dp"
+            android:visibility="invisible"
+            motion:layout_constraintTop_toTopOf="@+id/textView" />
+
+    </ConstraintSet>
+</MotionScene>

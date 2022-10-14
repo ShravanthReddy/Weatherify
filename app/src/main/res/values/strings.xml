@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Weatherify</string>
+    <string name="humidityResult">88%</string>
+    <string name="pressureResult">2.3 m/s</string>
+    <string name="sunriseResult">06:41 AM</string>
+    <string name="sunsetResult">06:03 PM</string>
+
+</resources>
