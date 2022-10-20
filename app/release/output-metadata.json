@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.shravanth.weatherify",
+  "applicationId": "com.shravanth.myweatherapp",
   "variantName": "release",
   "elements": [
     {
